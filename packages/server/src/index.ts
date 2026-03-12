@@ -31,7 +31,7 @@ app.use(
   '/trpc',
   trpcExpress.createExpressMiddleware({ router: appRouter })
 );
-app.get('/api/public-status', (req, res) => {
+app.get('/api/public-status', (_req, res) => {
    res.json({ status: 'Online', forPublic: true });
 });
 
