@@ -28,7 +28,7 @@ function Dashboard() {
         fontFamily: 'monospace',
         fontSize: '14px',
         overflowX: 'auto'
-      }}>
+      }}> 
         <code>{JSON.stringify(query.data, null, 2)}</code>
       </pre>
     </div>
